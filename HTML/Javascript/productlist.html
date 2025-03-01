@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+//this is products 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #333;
+        }
+        .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Laptop Listing</h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="dellxps13.jpeg" alt="Laptop 1">
+                <h2>Dell XPS 13</h2>
+                <p>$999.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="macbookairm2.jpeg" alt="Laptop 2">
+                <h2>MacBook Air M2</h2>
+                <p>$1,199.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="hpspectrex360.jpeg" alt="Laptop 3">
+                <h2>HP Spectre x360</h2>
+                <p>$1,299.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="lenovothinkpad.jpeg" alt="Laptop 4">
+                <h2>Lenovo ThinkPad X1</h2>
+                <p>$1,499.00</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
